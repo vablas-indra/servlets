@@ -1,0 +1,77 @@
+<html>
+
+<h1><center><b>Formulari de reclamacions</b></center></h1>
+
+<form action="reqreader.jsp" method="post" enctype="multipart/form-data">
+
+
+
+<table border="0" cellpadding="3" cellspacing="0">
+
+
+<tr valign="top">
+   <td> <b>Nombre:</b> </td>
+   <td><input name="nombre" type="text" size=50></td>
+</tr>
+
+<tr valign="top">
+   <td> <b>e-mail:</b> </td>
+   <td><input name="email" type="text" size=30></td>
+</tr>
+
+
+<tr valign="top">
+   <td> <b>Motivo general de la reclamaci&oacute;n:</b> </td>
+   <td>
+     <select name="motiu" size=1>
+       <option value="estado"> Estado general de la habitaci&oacute;n
+       <option value="comida"> Comida
+       <option value="servicio"> Servicio
+       <option value="otros"> Otros
+     </select> 
+</td>
+</tr>
+ 
+
+<tr valign="top">
+   <td> <b>Detalles de la reclamaci&oacute;n:</b> </td>
+   <td><textarea name="detalle" rows=7 cols=50></textarea>
+   </td>
+</tr>
+
+<tr valign="top">
+   <td> <b>Es cliente habitual:</b> </td>
+   <td>
+       <input name="cliente" type="radio" value="1" checked> SÍ
+       <input name="cliente" type="radio" value="0"> NO  
+
+   </td>
+</tr>
+
+
+<tr valign="top">
+   <td colspan=2> 
+   <b>Opciones adicionales:</b> <br>
+   <input name="addenda" type="checkbox" value="1">
+     ¿Quiere recibir por escrito la respuesta a su queja?   
+   <input name="addenda" type="checkbox" value="2">
+     Reclama algún tipo de indemnización
+ </td>
+</tr>
+
+<tr valign="top">
+   <td> &nbsp; </td>
+   <td>
+       <input type="submit" value="Enviar"></textarea>
+       <input type="reset" value="Reiniciar"></textarea>
+   </td>
+</tr>
+
+<input type="hidden" name="autor" value="vablas">
+
+</table>
+
+</form>
+
+</html>
+
