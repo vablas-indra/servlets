@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Manejo por DOM</title>
+<script type="text/javascript" src="js/inicio.js"> </script>
+</head>
+<body>
+	<p id="inicio">Este párrafo es el que sale al principio</p>
+
+	<p id="radioButton">Selecciona tu nivel de felicidad:</p>
+	<input type="radio" id="poco" name="felicidad" value="poco">
+	<label for="poco">Poco</label>
+	<br>
+	<input type="radio" id="bastante" name="felicidad" value="bastante">
+	<label for="bastante">Bastante</label>
+	<br>
+	<input type="radio" id="mucho" name="felicidad" value="mucho">
+	<label for="mucho">Mucho</label>
+
+	<p id="eliminable">Este p&acute;rrafo se va a eliminar</p>
+	<input type="button" onclick="getParrafos()" value="getParrafo" />
+	<input type="button" onclick="getRadioButton()" value="getRadioButton" />
+	<input type="button" onclick="creaNodo()" value="creaNodo" />
+	<input type="button" onclick="eliminaNodo()" value="eliminaNodo" />
+</body>
+</html>

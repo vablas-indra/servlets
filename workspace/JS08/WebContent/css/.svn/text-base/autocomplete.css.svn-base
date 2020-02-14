@@ -1,0 +1,9 @@
+.mouseOut {
+    background: #7A8AFF;
+    color: #FFFAFA;
+}
+
+.mouseOver {
+    background: #FFFAFA;
+    color: #000000;
+}
